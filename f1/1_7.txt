@@ -1,0 +1,6 @@
+(a) String, [Char]
+(b) (Char, Char, Char)
+(c) [(Bool, Char)]
+(d) ([Bool], [Char]), ([Bool], String)
+(e) [[a]]
+(f) [Bool]
