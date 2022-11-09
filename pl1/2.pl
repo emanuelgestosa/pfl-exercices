@@ -30,6 +30,10 @@ frequenta('Redes', 'Cláudio').
 frequenta('Redes', 'Diana').
 frequenta('Redes', 'Eduardo').
 
+frequenta2(A):-frequenta(U1, A),
+               frequenta(U2, A),
+               U1 \= U2.
+
 aluno(A, P):-frequenta(U, A),
              leciona(U, P).
 
