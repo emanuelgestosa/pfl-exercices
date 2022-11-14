@@ -27,11 +27,11 @@ fibonacci(N, F):-N > 2,
 
 % d) Implemente o predicado isPrime(+X), que determina se X é um número primo.
 % Sugestão: um número é primo se for divisível apenas por si próprio e por 1.
-isPrimeAux(X, I):-I * I > X.
-isPrimeAux(X, I):-I * I =< X,
+isPrime(X, I):-I * I > X.
+isPrime(X, I):-I * I =< X,
                  X mod I =\= 0,
                  I1 is I + 1,
-                 isPrimeAux(X, I1).
+                 isPrime(X, I1).
 isPrime(1).
 isPrime(X):-X > 2,
-            isPrimeAux(X, 2).
+            isPrime(X, 2).
