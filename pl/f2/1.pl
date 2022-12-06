@@ -16,9 +16,9 @@ somaRec(N, Sum):-N > 1,
 
 % c) Implemente o predicado fibonacci(+N, ?F), que calcula o número de
 % fibonacci de ordem N
+fibonacci(0, 1).
 fibonacci(1, 1).
-fibonacci(2, 1).
-fibonacci(N, F):-N > 2,
+fibonacci(N, F):-N > 1,
                  N1 is N - 1,
                  N2 is N - 2,
                  fibonacci(N1, F1),
